@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zadanie 6 </title>
+</head>
+
+<body class="bg-gray-100 text-gray-800 p-6 font-sans">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-8 text-blue-600">Baza Artykułów</h1>
+    
+    <div class="mb-6 flex justify-end">
+      <label for="sort-select" class="mr-3 text-lg font-semibold self-center">Sortuj:</label>
+      <select id="sort-select" class="border border-gray-300 rounded p-2 bg-white">
+        <option value="created_at.desc">Po dacie malejąco</option>
+        <option value="created_at.asc">Po dacie rosnąco</option>
+        <option value="title.asc">Po nazwie alfabetycznie</option>
+      </select>
+    </div>
+
+    <div id="articles-list" class="space-y-6 mb-12">
+      <p class="text-center text-gray-500">Ładowanie artykułów...</p>
+    </div>
+
+    <hr class="border-gray-300 mb-8">
+
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6">Dodaj nowy artykuł</h2>
+      <form id="add-article-form" class="space-y-4">
+        <div>
+          <label class="block font-semibold mb-1">Tytuł *</label>
+          <input type="text" id="input-title" required class="w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Podtytuł</label>
+          <input type="text" id="input-subtitle" class="w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Autor *</label>
+          <input type="text" id="input-author" required class="w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Data utworzenia</label>
+          <input type="datetime-local" id="input-date" class="w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Treść *</label>
+          <textarea id="input-content" rows="4" required class="w-full border border-gray-300 rounded p-2"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition">
+          Stwórz artykuł
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
