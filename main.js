@@ -2,7 +2,7 @@ import './style.css';
 import dayjs from 'dayjs';
 
 
-const SUPABASE_URL = 'https://ipyxpocgjsqxyfnqaftw.supabase.co/rest/v1/'; 
+const SUPABASE_URL = 'https://ipyxpocgjsqxyfnqaftw.supabase.co'; 
 const SUPABASE_KEY = 'sb_publishable_3tFFcpxpoPBy8dw939fswQ_Duj_ZSDX';
 
 const articlesList = document.getElementById('articles-list');
