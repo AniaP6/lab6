@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/lab-6/', 
+  base: '/lab6/',
 })
