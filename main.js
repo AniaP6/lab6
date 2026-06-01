@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 
 
 const SUPABASE_URL = 'https://ipyxpocgjsqxyfnqaftw.supabase.co'; 
-const SUPABASE_KEY = 'sb_publishable_3tFFcpxpoPBy8dw939fswQ_Duj_ZSDX';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlweXhwb2NnanNxeHlmbnFhZnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyNDI3MTYsImV4cCI6MjA5NTgxODcxNn0.kFMz6PMC-WmKMb7OSZXRPa5em1woeuYj2q7dQKsezE0';
 
 const articlesList = document.getElementById('articles-list');
 const sortSelect = document.getElementById('sort-select');
